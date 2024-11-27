@@ -21,17 +21,30 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   
     function toggleHeadersAndFooters() {
-      header1.classList.add("invisible");
-      footer1.classList.add("invisible");
-  
-      setTimeout(function () {
+      if (!header1.classList.contains("invisible")) {
         header1.classList.add("invisible");
         footer1.classList.add("invisible");
   
-        header2.classList.remove("visible");
-        footer2.classList.remove("visible");
-
-      }, 1000);
+        setTimeout(() => {
+          header1.classList.add("invisible");
+          footer1.classList.add("invisible");
+  
+          header2.classList.remove("invisible");
+          footer2.classList.remove("invisible");
+        }, 1000);
+      } 
+      else {
+        header2.classList.add("invisible");
+        footer2.classList.add("invisible");
+  
+        setTimeout(() => {
+          header2.classList.add("invisible");
+          footer2.classList.add("invisible");
+  
+          header1.classList.remove("invisible");
+          footer1.classList.remove("invisible");
+        }, 1000);
+      }
     }
   
     function resetTimer() {
