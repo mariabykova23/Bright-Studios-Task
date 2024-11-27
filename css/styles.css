@@ -300,8 +300,13 @@ a {
   gap: 10px;
 }
 
+.header2-block3 {
+  border-bottom: 1px lightgrey solid;
+}
+
+.header2-block3,
 .header2-block2 {
-  border-bottom: 2px lightgrey solid;
+  background-color: white;
 }
 
 .header2-block2-part1 {
@@ -333,7 +338,7 @@ a {
   stroke: transparent;
 }
 
-.header2-block3-part4-input {
+.header2-block2-part4-input {
   width: 674px;
   height: 46px;
   padding: 0px 130px 0px 15px;
@@ -341,7 +346,7 @@ a {
   border: 0.5px grey solid;
 }
 
-.header2-block3-part4 {
+.header2-block2-part4 {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -353,22 +358,57 @@ a {
   margin-left: 20px;
 }
 
-.header2-block3{
+.header2-block3 {
   color: black;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 30px;
+  font-family: RakutenSansUi, RakutenSansUiBlack, RakutenSansUiLight,
+    RakutenSansUiSemiBold, sans-serif;
+  font-size: 15px;
+  height: 44px;
 }
 
-.header2-block3-link{
+.header2-block3-link {
   color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
 
-.header2-block1-part2-item{
+.header2-block3-item {
   display: flex;
   justify-content: center;
-  align-items: ;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 10px;
 }
+
+.header2-block3-item-svgpt {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.block3-svg {
+  fill: lightgrey;
+}
+
+.btn-up {
+  background-color: yellow;
+  position: fixed;
+  top: 75%;
+  left: 48%;
+  z-index: 20;
+  color: black;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
 /* ///////FOOTER2////// */
