@@ -19,10 +19,12 @@ a {
 .invisible {
   opacity: 0;
   visibility: hidden;
+  display: none;
 }
 
 /* ///////HEADER1////// */
-#header1,#header2{
+#header1,
+#header2 {
   position: sticky;
   top: 0px;
   z-index: 1000;
@@ -253,35 +255,120 @@ a {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
 }
 
-.footer1-network-block4-link{
+.footer1-network-block4-link {
   color: green;
 }
 
-.footer1-network-block4-title{
+.footer1-network-block4-title {
   font-size: 12px;
   font-weight: 400;
   margin: 0px;
   color: grey;
 }
 
-
-.lorem{
+.lorem {
   padding: 12px 25px 12px 25px;
   margin: 0px;
 }
 
-#countdown{
-position: fixed;
-top:45%;
-left:45%;
-background-color: aqua;
+#countdown {
+  position: fixed;
+  top: 45%;
+  left: 45%;
+  background-color: aqua;
 }
 
-
 /* ///////HEADER2////// */
+.header2-block1 {
+  background-color: darkblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  font-family: RakutenSansUi, sans-serif;
+  font-size: 14px;
+}
 
+.header2-block1-link-a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.header2-block2 {
+  border-bottom: 2px lightgrey solid;
+}
+
+.header2-block2-part1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-arrow {
+  fill: grey;
+  stroke: transparent;
+}
+
+.header2-block2-part2-btn {
+  border: none;
+  background: transparent;
+}
+
+.header2-block2-part4-btn {
+  background-color: black;
+  border: none;
+  height: 48px;
+  width: 50px;
+}
+
+.header-icon-search {
+  fill: white;
+  stroke: transparent;
+}
+
+.header2-block3-part4-input {
+  width: 674px;
+  height: 46px;
+  padding: 0px 130px 0px 15px;
+  box-sizing: border-box;
+  border: 0.5px grey solid;
+}
+
+.header2-block3-part4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+}
+
+.header2-block2-part5 {
+  margin-left: 20px;
+}
+
+.header2-block3{
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.header2-block3-link{
+  color: black;
+}
+
+.header2-block1-part2-item{
+  display: flex;
+  justify-content: center;
+  align-items: ;
+}
 /* ///////FOOTER2////// */
