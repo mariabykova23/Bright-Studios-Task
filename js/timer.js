@@ -20,35 +20,26 @@ document.addEventListener("DOMContentLoaded", function () {
       }, 1000);
     }
   
-    // Зміна хедерів і футерів
     function toggleHeadersAndFooters() {
-      // Сховати поточні
-      header1.classList.add("hidden-fade");
-      footer1.classList.add("hidden-fade");
+      header1.classList.add("invisible");
+      footer1.classList.add("invisible");
   
       setTimeout(function () {
-        header1.classList.add("hidden");
-        footer1.classList.add("hidden");
+        header1.classList.add("invisible");
+        footer1.classList.add("invisible");
   
-        // Показати нові
-        header2.classList.remove("hidden");
-        header2.classList.remove("hidden-fade");
-        footer2.classList.remove("hidden");
-        footer2.classList.remove("hidden-fade");
-  
-        header2.style.opacity = "1";
-        footer2.style.opacity = "1";
+        header2.classList.remove("visible");
+        footer2.classList.remove("visible");
+
       }, 1000);
     }
   
-    // Скидання таймера
     function resetTimer() {
-      countdown = 90; // Скинути час
+      countdown = 90; 
       timerDisplay.textContent = countdown;
-      startTimer(); // Запустити таймер знову
+      startTimer(); 
     }
-  
-    // Автоматичний запуск при завантаженні сторінки
+
     startTimer();
   });
   
